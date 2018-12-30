@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl" lang="fa">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Translate Persian</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous" />
+  <link href="https://cdn.rawgit.com/rastikerdar/vazir-font/v[X.Y.Z]/dist/font-face.css" rel="stylesheet" type="text/css" />
+
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   <script src=""></script>
 </head>
 <body>
   <div class="container">
-    <div class="header">Translate Persian</div>
-    <div class="search-word">search-word</div>
-    <div class="search">search</div>
-    <div class="footer">
-      <div class="version">version</div>
-      <div class="more">امکانات بیشتر</div>
+    <div class="header">ترجمه متون فارسی</div>
+    <div class="search-word">
+      <input type="text" class="search-term" name="searchWord" placeholder="جستجو کنید">
+      <button type="submit" class="search-button">
+        <i class="fa fa-search"></i>
+      </button>
     </div>
-  </div>  
+    <div class="search">
+      <div class="search-header">
+        <span>جستجو در متن</span>
+        <button type="submit" class="search-button">جستجو</button>
+      </div>
+      <textarea class="search-textarea" name="search" id="search" cols="30" rows="14" placeholder="متن خود را وارد کنید"></textarea>
+    </div>
+    <div class="footer">
+      <div class="more">امکانات بیشتر</div>
+      <span>|</span>
+      <div class="version">نسخه 0.0.0</div>
+    </div>
+  </div>
 </body>
 </html>
